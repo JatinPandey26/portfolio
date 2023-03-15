@@ -39,7 +39,7 @@ function App() {
       <Codesection />
       <MarqueBars />
       <Projects />
-      <Gallery />
+      {/* <Gallery /> */}
       <Footer />
       <div
         className="primary-cursor h-5 w-5 rounded-[50%] bg-[#DE1111] absolute z-[1000]"

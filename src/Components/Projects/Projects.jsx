@@ -5,9 +5,10 @@ import tsf from '../../assets/projects/tsf2.png'
 import talkkr from '../../assets/projects/talkkr.png'
 import keeper from '../../assets/projects/keeper.png'
 import techza from '../../assets/projects/techzan.png'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import gsap from "gsap/dist/gsap";
 
+gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
 
     const itemRef1 = React.useRef();
@@ -20,15 +21,13 @@ const Projects = () => {
     const contentRef3 = React.useRef();
     const contentRef4 = React.useRef();
 
-    const stickyRef   = React.useRef();
+    const stickyRef = React.useRef();
 
     useLayoutEffect(() => {
         const ATTR_NAME = "element-name";
         const ATTR_SECTION_VALUE = "sticky-tabs-scroll-section";
         const ATTR_ITEM_VALUE = "sticky-tabs-item";
         const ATTR_CONTENT_VALUE = "sticky-tabs-content";
-
-        gsap.registerPlugin(ScrollTrigger);
 
         // const tabItems = gsap.utils.toArray(document.querySelectorAll(
         //     `[${ATTR_NAME}="${ATTR_ITEM_VALUE}"]`

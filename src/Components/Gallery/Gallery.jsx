@@ -2,14 +2,14 @@ import React, { useLayoutEffect } from 'react'
 import style from './style.module.scss'
 
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+// import ScrollTrigger from 'gsap/ScrollTrigger'
 import Lenis from '@studio-freight/lenis'
 
 const Gallery = () => {
 
     useLayoutEffect(() => {
 
-        gsap.registerPlugin(ScrollTrigger);
+        // gsap.registerPlugin(ScrollTrigger);
 
         const lenis = new Lenis({
             duration: 1.2,
