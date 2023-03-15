@@ -1,0 +1,21 @@
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    >div {
+        display: flex;
+        gap: 5rem;
+
+        >div {
+            gap: 5rem;
+            font-size: 15rem;
+            line-height: 16rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    
+}

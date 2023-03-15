@@ -1,0 +1,99 @@
+.gallery {
+    position: relative;
+
+    h1 {
+        font-size: 14rem;
+        font-family: 'Bebas Neue';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        margin: 0;
+        color: #FC4241;
+       
+        @media screen and (max-width : 720px) {
+            font-size: 7rem;
+        }
+        -webkit-text-stroke: 1px rgb(248, 247, 247);
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        height: 200vh;
+       
+    }
+
+    .img {
+        width: 100%;
+        height: 700px;
+       
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+
+
+        &:nth-child(1) {
+            background-image: url('../../assets/gallery/g1.jpg');
+        
+        }
+
+        &:nth-of-type(2) {
+            background-image: url('../../assets/gallery/g5.jpg');
+        }
+
+        &:nth-of-type(3) {
+            background-image: url('../../assets/gallery/g3.jpg');
+        }
+
+        &:nth-of-type(4) {
+            background-image: url('../../assets/gallery/g4.jpg');
+        }
+
+        &:nth-of-type(5) {
+            background-image: url('../../assets/gallery/g2.jpg');
+        }
+
+        &:nth-of-type(6) {
+            background-image: url('../../assets/gallery/g6.jpg');
+        }
+
+        &:nth-of-type(7) {
+            background-image: url('../../assets/gallery/g7.jpg');
+        }
+
+        &:nth-of-type(8) {
+            background-image: url('../../assets/gallery/g8.jpg');
+        }
+
+        &:nth-of-type(9) {
+            background-image: url('../../assets/gallery/g9.jpg');
+        }
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100vh;
+            @media screen and (max-width : 500px) {
+                height:50vh;
+            }
+            width: 100%;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            border-right: 1px solid black;
+        }
+    }
+
+    .line {
+        border-right: 1px solid black;
+    }
+}

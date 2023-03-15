@@ -1,0 +1,21 @@
+.wrapper{
+    margin-top: 4rem;
+    display: flex;
+    @media screen and (max-width : 770px) {
+        flex-direction: column;
+    }
+}
+
+.welcome{
+    border-top: 1px solid;
+    font-size: 10rem;
+    text-align: center;
+    width: 100%;
+
+    @media screen and (max-width :900px) {
+        font-size: 7rem;
+    }
+    @media screen and (max-width :650px) {
+        font-size: 4rem;
+    }
+}

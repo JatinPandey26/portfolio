@@ -1,0 +1,89 @@
+.wrapper {
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+    gap: 2rem;
+    padding-left: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width : 770px) {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    h1 {
+        font-size: 5rem;
+
+        @media screen and (max-width : 370px) {
+            width: 100%;
+            font-size: 3rem;
+        }
+    }
+
+    &:hover img {
+        rotate: 90deg;
+        translate: 0 10rem;
+        scale: 1.5;
+    }
+
+    border-top: 1px solid;
+
+    button {
+        width: fit-content;
+        padding: 2rem;
+        border-radius: 50%;
+        font-size: 3rem;
+        align-self: center;
+        background-color: #FC4241;
+        border: none;
+        cursor: pointer;
+        @media screen and (max-width : 550px) {
+
+            font-size: 2rem;
+        }
+    }
+
+    p {
+
+        width: 70%;
+
+        @media screen and (max-width : 770px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width : 530px) {
+            width: 100%;
+            font-size: 0.8rem;
+        }
+    }
+
+    svg {
+        height: 3rem;
+        width: 3rem;
+        object-fit: cover;
+    }
+
+    img {
+        height: 6rem;
+        width: 8rem;
+        object-fit: contain;
+        position: absolute;
+        rotate: 145deg;
+        right: 10vw;
+        transition: 0.3s ease-in-out;
+
+        @media screen and (max-width : 550px) {
+            height: 3rem;
+            width: 5rem;
+        }
+
+        &:hover {
+            rotate: 90deg;
+        }
+    }
+}

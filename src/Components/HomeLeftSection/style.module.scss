@@ -1,0 +1,39 @@
+.wrapper {
+    width: 50%;
+    border-right: 1px solid;
+    height: 100%;
+    min-height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width : 770px) {
+        width: 100%;
+        min-height: 40vh;
+    }
+    
+    >div {
+        display: flex;
+        gap: 5rem;
+
+        >div {
+            gap: 5rem;
+            font-size: 15rem;
+            line-height: 16rem;
+            font-weight: bold;
+            display: flex;
+        }
+    }
+
+    >p {
+        width: 70%;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        @media screen and (max-width : 770px) {
+            width: 90%;
+        }
+        svg{
+            display: inline-block;
+        }
+    }
+}
