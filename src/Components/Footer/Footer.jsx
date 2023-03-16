@@ -81,7 +81,7 @@ const Footer = () => {
                         <h1>FOLLOW</h1>
                         <h1>ME</h1>
                     </div>
-                    <p>© 2022 HAKAJI. ALL RIGHTS RESERVED.FOR ANY QUESTIONS PLEASE CONTACT <a href="mailto:JATIN26PANDEY@GMAIL.COM" style={{ color: 'black', cursor: 'pointer' }}>JATIN26PANDEY@GMAIL.COM</a></p>
+                    <p>© 2022 . ALL RIGHTS RESERVED. FOR ANY QUESTIONS PLEASE CONTACT <a href="mailto:JATIN26PANDEY@GMAIL.COM" style={{ color: 'black', cursor: 'pointer' }}>JATIN26PANDEY@GMAIL.COM</a></p>
                 </div>
                 <div className={style.right}>
                     <img src={myPic} alt="" />
