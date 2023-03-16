@@ -110,3 +110,25 @@ html,body {
   /* stroke: #4691f6; */
   stroke-width: 1;
 }
+
+.open {
+  height: 120vh;
+  overflow: hidden;
+transition: 1s ease-in-out all;
+}
+
+.close {
+ overflow: hidden;
+ transition: 1s ease-in-out all;
+height: 0vh;
+ 
+}
+
+@keyframes closeAnimation {
+  0%{
+    height: 100vh;
+  }
+  100%{
+    height: vh;
+  }
+}

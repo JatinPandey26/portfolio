@@ -6,7 +6,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import MarqueBars from "./Components/CodeSection/MarqueeBars/MarqueBars";
 import Footer from "./Components/Footer/Footer";
 import Gallery from "./Components/Gallery/Gallery";
-import Projects from "./Components/Projects/Projects";
+import Projects, { ProjectsNew } from "./Components/Projects/Projects";
 import TextSpin from "./Components/TextSpin/TextSpin";
 import { Experience, Education } from "./Components/Experience/Experience";
 import gsap from "gsap";
@@ -38,7 +38,8 @@ function App() {
       <TextSpin />
       <Codesection />
       <MarqueBars />
-      <Projects />
+      <ProjectsNew/>
+      {/* <Projects /> */}
       {/* <Gallery /> */}
       <Footer />
       <div
