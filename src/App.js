@@ -35,7 +35,7 @@ function App() {
       <HomeSection />
       <Education />
       <Experience />
-      <TextSpin />
+      {/* <TextSpin /> */}
       <Codesection />
       <MarqueBars />
       <ProjectsNew/>
