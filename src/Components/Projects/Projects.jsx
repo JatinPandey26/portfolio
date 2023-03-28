@@ -5,6 +5,7 @@ import tsf from '../../assets/projects/tsf2.png'
 import talkkr from '../../assets/projects/talkkr.png'
 import keeper from '../../assets/projects/keeper.png'
 import techza from '../../assets/projects/techzan.png'
+import gigmee from '../../assets/projects/gigmee.png'
 
 const cardsData = [
     {
@@ -26,6 +27,14 @@ const cardsData = [
         img: talkkr,
     },
     {
+        heading: 'GIGMEE',
+        description: <p>
+            The Freelancing App is an all-in-one platform connecting clients with skilled independent contractors for projects. The app is built using advanced technologies such as <strong>ReactJs</strong>, <strong>Cloudinary</strong>, <strong>Sass</strong>, and <strong>React-Query</strong> for the frontend, providing a seamless user experience. On the backend, the app utilizes <strong>ExpressJs</strong>, <strong>Mongoose</strong>, <strong>MongoDB</strong>, <strong>Bcrypt</strong>, <strong>JWT</strong>, and <strong>Stripe</strong> for secure payments. The app offers all the advanced features required to manage projects and ensure timely delivery. Its intuitive interface, comprehensive tools, and flexible payment options make it an excellent choice for businesses looking to hire independent contractors for their projects. With the Freelancing App, clients can easily find the right talent and manage projects with ease.
+        </p>,
+        link: 'https://gigmee-frontend.vercel.app/',
+        img: gigmee
+    },
+    {
         heading: 'TECHZA',
         description: <p>
             The course selling app I developed is a comprehensive platform that enables users to browse and purchase online courses on various subjects. The app is built using <strong>ExpressJs</strong>, <strong>REST API</strong>, <strong>MongoDB</strong>, and <strong>Cloudinary</strong> for the backend, and features <strong>JWT-based authentication</strong> and admin route protection for enhanced security. The frontend was developed using <strong>ReactJs</strong>, <strong>ChakraUI</strong>, <strong>ChartJs</strong>, and <strong>Redux</strong>, and includes unique features such as themes. Payments and subscriptions are implemented using <strong>Razorpay</strong>, providing users with a convenient and secure way to purchase courses. Overall, this app is a valuable tool for individuals seeking to expand their knowledge and skills in a wide range of subjects, while also offering a user-friendly and reliable platform for course providers to sell their content. </p>,
@@ -39,7 +48,7 @@ export const ProjectsNew = () => {
     return (
         <div className={styles.container}>
             <h1>PROJECTS</h1>
-            <div style={{borderLeft:'1px solid'}}>
+            <div style={{ borderLeft: '1px solid' }}>
                 {
                     cardsData.map((card, index) => (
                         <CardProject key={index} item={card} />
