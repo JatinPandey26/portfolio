@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './style.module.scss'
+import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import styles from './style.module.scss';
 const Navbar = () => {
   const [openNavbar, setOpenNavbar] = React.useState(false)
   return (
     <div className={styles.navbar}>
       <h3>JP</h3>
       <div>
-        <button><a href='https://drive.google.com/uc?export=download&id=1GojSvMjM8Pqa0c8ymugGFfRt0hpS1sK9' download style={{ textDecoration: 'none', color: 'black' }}>Resume</a> </button>
+        <button><a href='https://drive.google.com/file/d/1JFq-pQKFdEBb5asdOFNQLzm09GtKFDch/view?usp=sharing' download style={{ textDecoration: 'none', color: 'black' }}>Resume</a> </button>
         <button onClick={() => setOpenNavbar(!openNavbar)}>MENU</button>
       </div>
       {
