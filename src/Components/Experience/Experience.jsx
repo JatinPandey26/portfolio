@@ -1,11 +1,17 @@
 import React from 'react'
-import school from '../../assets/school.png'
 import college from '../../assets/college.png'
 import scaler from '../../assets/scaler.png'
+import abekus from '../../assets/abekus.jpg'
+import school from '../../assets/school.png'
 import tsf from '../../assets/tsf.jfif'
 import './Experience.scss'
 export const Experience = () => {
     const data = [
+        {
+            img: abekus,
+            course: 'Software Developer',
+            institution: 'ABEKUS',
+        },
         {
             img: scaler,
             course: 'ReactJS Technical Content',
@@ -13,7 +19,7 @@ export const Experience = () => {
         },
         {
             img: tsf,
-            course: 'Front-End Developer',
+            course: 'Full Stack Developer',
             institution: 'Tanmay Sachin Foundation',
         },
         {
