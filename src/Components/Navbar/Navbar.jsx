@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <h3>JP</h3>
       <div>
-        <button><a href='https://drive.google.com/file/d/1JFq-pQKFdEBb5asdOFNQLzm09GtKFDch/view?usp=sharing' download style={{ textDecoration: 'none', color: 'black' }}>Resume</a> </button>
+        <button><a href='https://drive.google.com/file/d/1KtveqXfhTGXvjgMAhXovKj4x08J6v9VP/view' download style={{ textDecoration: 'none', color: 'black' }}>Resume</a> </button>
         <button onClick={() => setOpenNavbar(!openNavbar)}>MENU</button>
       </div>
       {
